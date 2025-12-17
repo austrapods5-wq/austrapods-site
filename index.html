@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AUSTRAPODS | Pods & Vapes</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+font-family:Arial,Helvetica,sans-serif;
+background:#000;
+color:#fff;
+overflow-x:hidden;
+}
+body::before{
+content:"";
+position:fixed;
+inset:0;
+background:linear-gradient(#0a0a0a,#000);
+z-index:-2;
+}
+.smoke{
+position:fixed;
+width:200%;
+height:200%;
+top:-50%;
+left:-50%;
+background:radial-gradient(circle,rgba(255,255,255,.15),transparent 60%);
+filter:blur(60px);
+animation:smoke 20s linear infinite;
+z-index:-1;
+}
+@keyframes smoke{
+0%{transform:rotate(0deg)}
+100%{transform:rotate(360deg)}
+}
+.hero{
+height:65vh;
+background:
+linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.9)),
+url("https://i.ibb.co/1JKX0c74/unnamed.jpg") center/cover;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+.hero h1{
+font-size:3rem;
+color:#00ffcc;
+text-shadow:0 0 25px #00ffcc;
+}
+.hero p{
+margin-top:10px;
+color:#ccc;
+}
+.container{
+max-width:1200px;
+margin:-50px auto 40px;
+padding:20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+.flash{
+grid-column:1/-1;
+background:linear-gradient(90deg,#ff4444,#ff0000);
+padding:15px;
+text-align:center;
+border-radius:15px;
+font-weight:bold;
+box-shadow:0 0 20px red;
+}
+.card{
+background:rgba(255,255,255,.05);
+border:1px solid rgba(0,255,204,.3);
+border-radius:20px;
+padding:20px;
+backdrop-filter:blur(10px);
+display:flex;
+flex-direction:column;
+}
+.card img{
+width:100%;
+height:230px;
+object-fit:cover;
+border-radius:15px;
+margin-bottom:15px;
+}
+.card h2{
+color:#00ffcc;
+margin-bottom:5px;
+}
+.price{
+font-size:1.2rem;
+font-weight:bold;
+color:#ffd700;
+margin-bottom:10px;
+}
+.card ul{
+list-style:none;
+margin-bottom:15px;
+}
+.card ul li{
+margin-bottom:6px;
+color:#ddd;
+}
+.btn{
+margin-top:auto;
+padding:14px;
+text-align:center;
+background:linear-gradient(90deg,#00ffcc,#00b3ff);
+color:#000;
+border-radius:50px;
+font-weight:bold;
+text-decoration:none;
+text-transform:uppercase;
+}
+.delivery{
+margin-top:8px;
+color:#ff4444;
+font-size:.9rem;
+font-weight:bold;
+text-align:center;
+}
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+width:65px;
+height:65px;
+background:#25d366;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:35px;
+text-decoration:none;
+color:#fff;
+box-shadow:0 0 20px #25d366;
+z-index:999;
+}
+footer{
+margin-top:40px;
+padding:40px 20px;
+text-align:center;
+background:#050505;
+border-top:1px solid rgba(255,255,255,.1);
+}
+footer p{
+margin-top:10px;
+font-size:.9rem;
+opacity:.7;
+}
+</style>
+</head>
+
+<body>
+
+<div class="smoke"></div>
+
+<a class="whatsapp" target="_blank"
+href="https://wa.me/5538984297294?text=Olá! Vim pelo Instagram da AUSTRAPODS 💨 Quero consultar valores dos pods e da entrega.">
+📱
+</a>
+
+<header class="hero">
+<h1>AUSTRAPODS</h1>
+<p>🔥 Pods & Vapes Premium</p>
+<p><strong>Valores e entrega sob consulta no WhatsApp</strong></p>
+</header>
+
+<section class="container">
+
+<div class="flash">
+🚨 Promoções e combos especiais! Consulte no WhatsApp 📲
+</div>
+
+<div class="card">
+<img src="https://i.ibb.co/nM99hjHS/OIP-1.webp">
+<h2>ELFBAR</h2>
+<p class="price">💰 Valor sob consulta</p>
+<ul>
+<li>🍓 Morango</li>
+<li>🍇 Uva Ice</li>
+<li>🥝 Kiwi</li>
+</ul>
+<a class="btn"
+href="https://wa.me/5538984297294?text=Olá! Quero consultar valores do ELFBAR e da entrega."
+target="_blank">Consultar no WhatsApp</a>
+<p class="delivery">🚚 Entrega: consultar</p>
+</div>
+
+<div class="card">
+<img src="https://i.ibb.co/0Rpn5nL8/Elf-Bar-BC5000-Vapes-1024x768.jpg">
+<h2>OXBAR</h2>
+<p class="price">💰 Valor sob consulta</p>
+<ul>
+<li>🍉 Melancia Ice</li>
+<li>🍋 Limonada Rosa</li>
+<li>🍑 Pêssego</li>
+</ul>
+<a class="btn"
+href="https://wa.me/5538984297294?text=Olá! Quero consultar valores do OXBAR e da entrega."
+target="_blank">Consultar no WhatsApp</a>
+<p class="delivery">🚚 Entrega: consultar</p>
+</div>
+
+<div class="card">
+<img src="https://i.ibb.co/mCTmL1yF/OIP.webp">
+<h2>IGNITE</h2>
+<p class="price">💰 Valor sob consulta</p>
+<ul>
+<li>🥭 Manga Ice</li>
+<li>❄️ Menta</li>
+<li>🫐 Blueberry</li>
+</ul>
+<a class="btn"
+href="https://wa.me/5538984297294?text=Olá! Quero consultar valores do IGNITE e da entrega."
+target="_blank">Consultar no WhatsApp</a>
+<p class="delivery">🚚 Entrega: consultar</p>
+</div>
+
+</section>
+
+<footer>
+<p>📲 WhatsApp: (38) 98429-7294</p>
+<p>⚠️ Proibido para menores de 18 anos</p>
+<p>© AUSTRAPODS</p>
+</footer>
+
+</body>
+</html>
